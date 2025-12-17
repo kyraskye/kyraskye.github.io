@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/juniatastyle.css">
+    <link rel="icon" type="image/x-icon" href="laxicon.png">
+    <script src="juniataathlete.js"></script>
+    <title>Juniata Experience</title>
+</head>
+<body>
+    <nav>
+            <ul class="nav-links">
+                <li><a href="history.html">History</a></li>
+                <li><a href="mens.html">Men's Rules</a></li>
+                <li><a href="womens.html">Women's Rules</a></li>
+                <li><a href="juniataathlete.html">Juniata Athlete</a></li>
+                <li><a href="index.html">Home</a></li>
+            </ul>
+    </nav>
+    
+    <h2>Meet Me!</h2>
+    <img src="media/playing.jpg">
+    <p>I am a sophomore lacrosse player at Juniata College in Pennslyvania. I am the defender in the picture above.
+        I have been playing lacrosse since I was 4 years old. My older sister played and introduced me to the game. 
+        I picked it up with ease and began to love the sport. I began playing club and was interested in playing in college to help with finances.
+        As a first generation student, I found it difficult to turn down the opprotunity to take advantage of my talent. 
+    </p>
+    <p>
+        Learn more!
+        <a href="https://juniatasports.net/sports/wlax/2024-25/bios/shipley_kyra_wpt3?view=bio">See my 2025 Stats!</a>
+    </p>
+
+    <h2>Why Juniata?</h2>
+    <p>
+        When I was initially recruited out of highschool, I did not choose Juniata. I went to a college in North Carolina called University of Mount Olive.
+        Once I arrived on that campus I almost immediately knew it was not the place for me. I entered the transfer portal halfway through my first semester of Freshman year.
+        I knew I wanted to go closer to home, I couldn't keep driving 6 hours every time I wanted to visit home. I knew that I needed a team of best friends. 
+        I wanted to love the people I was around, at I didn't have that where I was. 
+        <br/>
+        The Coach at the time, Tori Quinn, reached out to me and Juniata met every thing I could have hoped for at my past college. 
+        I committed to playing lacrosse at Juniata in the middle of my Freshman year, and arrived in the Spring of 2025. 
+        I played lacrosse that season and knew coming to Juniata was the best thing I could have done. 
+    </p>
+
+<form id="introForm">
+
+    <h2>Introduce Yourself</h2>
+
+    <div class="field-group">
+        <label>First Name:</label><br>
+        <input type="text" name="firstName" required>
+    </div>
+
+    <div class="field-group">
+        <label>Last Name:</label><br>
+        <input type="text" name="lastName" required>
+    </div>
+
+    <div class="field-group">
+        <label>Gender:</label><br>
+        <input type="radio" name="gender" value="male" required> Male<br>
+        <input type="radio" name="gender" value="female"> Female<br>
+        <input type="radio" name="gender" value="other"> Prefer not to say
+    </div>
+
+    <div class="field-group">
+        <label>Lacrosse Experience:</label><br>
+        <input type="checkbox" name="lacrosse" value="heard"> Heard of it<br>
+        <input type="checkbox" name="lacrosse" value="neverHeard"> Never heard of it<br>
+        <input type="checkbox" name="lacrosse" value="played"> Played it<br>
+        <input type="checkbox" name="lacrosse" value="neverPlayed"> Never played it
+    </div>
+
+    <button type="submit">Submit</button>
+    <button type="reset">Reset</button>
+
+</form>
+
+<p id="thankYouMessage" class="thank-you">
+    Thank you for introducing yourself!
+</p>
+</body>
+</html>
