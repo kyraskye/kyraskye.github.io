@@ -5,9 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/historysstyle.css">
     <link rel="icon" type="image/x-icon" href="laxicon.png">
+    <script src="history.js"></script>
     <title>History of Lacrosse</title>
 </head>
 <body>
+    <nav>
+            <ul class="nav-links">
+                <li><a href="history.html">History</a></li>
+                <li><a href="mens.html">Men's Rules</a></li>
+                <li><a href="womens.html">Women's Rules</a></li>
+                <li><a href="juniataathlete.html">Juniata Athlete</a></li>
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </nav>
     <h2>Origins of Lacrosse</h2>
 <p>
     Lacrosse was played by the Six Nations of the Iroquois dating back to 1100, prior to the arrival of Christopher Columbus. 
@@ -38,5 +48,17 @@
 <p>
     Lacrosse was included in the Olympic Games in 1904 and 1908 with teams representing Canada, the United States, and Great Britain. Teams from those countries also demonstrated the sport in exhibitions at the Games in 1928, 1932, and 1948, but it did not attract enough international interest to remain an Olympic sport.
 </p>
+    <h2>Years Since Lacrosse Was Developed</h2>
+    <p>Enter your birth year to figure out how many years you were born after lacrosse was founded!</p>
+
+    <p>Please enter your birth year:</p>
+    <input type="number" id="birthYear" placeholder="e.g., 1990" min="1100" max="9999">
+
+    <button onclick="calculateYears()">Calculate</button>
+
+    <div id="result"></div>
+
 </body>
+
+
 </html>

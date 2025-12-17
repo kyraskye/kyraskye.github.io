@@ -5,9 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/juniatastyle.css">
     <link rel="icon" type="image/x-icon" href="laxicon.png">
+    <script src="juniataathlete.js"></script>
     <title>Juniata Experience</title>
 </head>
 <body>
+    <nav>
+            <ul class="nav-links">
+                <li><a href="history.html">History</a></li>
+                <li><a href="mens.html">Men's Rules</a></li>
+                <li><a href="womens.html">Women's Rules</a></li>
+                <li><a href="juniataathlete.html">Juniata Athlete</a></li>
+                <li><a href="index.html">Home</a></li>
+            </ul>
+    </nav>
+    
     <h2>Meet Me!</h2>
     <img src="media/playing.jpg">
     <p>I am a sophomore lacrosse player at Juniata College in Pennslyvania. I am the defender in the picture above.
@@ -31,62 +42,43 @@
         I committed to playing lacrosse at Juniata in the middle of my Freshman year, and arrived in the Spring of 2025. 
         I played lacrosse that season and knew coming to Juniata was the best thing I could have done. 
     </p>
+
+<form id="introForm">
+
+    <h2>Introduce Yourself</h2>
+
+    <div class="field-group">
+        <label>First Name:</label><br>
+        <input type="text" name="firstName" required>
+    </div>
+
+    <div class="field-group">
+        <label>Last Name:</label><br>
+        <input type="text" name="lastName" required>
+    </div>
+
+    <div class="field-group">
+        <label>Gender:</label><br>
+        <input type="radio" name="gender" value="male" required> Male<br>
+        <input type="radio" name="gender" value="female"> Female<br>
+        <input type="radio" name="gender" value="other"> Prefer not to say
+    </div>
+
+    <div class="field-group">
+        <label>Lacrosse Experience:</label><br>
+        <input type="checkbox" name="lacrosse" value="heard"> Heard of it<br>
+        <input type="checkbox" name="lacrosse" value="neverHeard"> Never heard of it<br>
+        <input type="checkbox" name="lacrosse" value="played"> Played it<br>
+        <input type="checkbox" name="lacrosse" value="neverPlayed"> Never played it
+    </div>
+
+    <button type="submit">Submit</button>
+    <button type="reset">Reset</button>
+
+</form>
+
+<p id="thankYouMessage" class="thank-you">
+    Thank you for introducing yourself!
+</p>
 </body>
-
-   <form action="/submit-data" method="post">
-        <h2>Introduce Yourself</h2>
-        <label for="firstname">First Name:</label>
-        <input type="text" id="first" name="firstName" required placeholder="Enter your first name">
-        <label for="lastname">Last Name:</label>
-        <input type="text" id="first" name="lastName" required placeholder="Enter your last name">
-
-
-        <div class="field-group">
-            <label>Gender / Preference:</label>
-            <div>
-                <input type="radio" id="genderMale" name="gender" value="male">
-                <label for="genderMale" style="display: inline; font-weight: normal;">Male</label>
-            </div>
-            <div>
-                <input type="radio" id="genderFemale" name="gender" value="female">
-                <label for="genderFemale" style="display: inline; font-weight: normal;">Female</label>
-            </div>
-            <div>
-                <input type="radio" id="genderOther" name="gender" value="other">
-                <label for="genderOther" style="display: inline; font-weight: normal;">Prefer Not to Say</label>
-            </div>
-        </div>
-
-        <div class="">
-
-        </div>
-
-        <div class="field-group">
-            <label>Have you ever played/ heard of lacrosse?</label>
-            <div>
-                <input type="checkbox" id="heard" name="played" value="heard">
-                <label for="heard" style="display: inline; font-weight: normal;">Heard of it</label>
-            </div>
-            <div>
-                <input type="checkbox" id="noheard" name="played" value="noheard">
-                <label for="noheard" style="display: inline; font-weight: normal;">Never heard of it</label>
-            </div>
-            <div>
-                <input type="checkbox" id="play" name="played" value="play">
-                <label for="play" style="display: inline; font-weight: normal;">I have played</label>
-            </div>
-            <div>
-                <input type="checkbox" id="noplay" name="played" value="noplay">
-                <label for="noplay" style="display: inline; font-weight: normal;">I have never played</label>
-            </div>
-        </div>
-        
-        <div class="button-group">
-            <button type="reset">Clear Form</button>
-            <button type="submit">Submit</button>
-        </div>
-
-    </form>
 </html>
-
-
